@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="CustomToolbarTitleText" parent="TextAppearance.AppCompat.Widget.ActionBar.Title">
+        <item name="android:textColor">@color/white</item>  <!-- Text color -->
+        <item name="android:textSize">18sp</item>           <!-- Text size -->
+    </style>
+
+    <!-- Custom Toolbar Theme -->
+    <style name="CustomToolbarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="android:textColorPrimary">@color/white</item> <!-- Customize primary text color -->
+        <item name="titleTextStyle">@style/CustomToolbarTitleText</item> <!-- Set custom title text style -->
+    </style>
+
+</resources>

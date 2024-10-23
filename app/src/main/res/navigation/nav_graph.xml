@@ -1,0 +1,64 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/welcomeFragment">
+
+    <!-- First-time User Flow -->
+    <fragment
+        android:id="@+id/welcomeFragment"
+        android:name="edu.raf.diplomski.gui.initial.WelcomeFragment"
+        tools:layout="@layout/fragment_welcome"
+        android:label="">
+        <action
+            android:id="@+id/action_welcomeFragment_to_genreSelectionFragment"
+            app:destination="@id/genreSelectionFragment" />
+        <action
+            android:id="@+id/action_welcomeFragment_to_lslSelectionFragment"
+            app:destination="@id/lslSelectionFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/genreSelectionFragment"
+        android:name="edu.raf.diplomski.gui.initial.GenreFragment"
+        android:label="@string/select_your_music"
+        tools:layout="@layout/fragment_genre_selection">
+        <action
+            android:id="@+id/action_genreSelectionFragment_to_mainFlow"
+            app:destination="@id/lslSelectionFragment" />
+    </fragment>
+
+    <!-- Regular Flow -->
+    <fragment
+        android:id="@+id/lslSelectionFragment"
+        android:name="edu.raf.diplomski.gui.regular.LslStreamsFragment"
+        android:label="@string/available_streams"
+        tools:layout="@layout/fragment_lsl_streams">
+
+        <action
+            android:id="@+id/action_lslSelection_to_calibration"
+            app:destination="@id/calibrationFragment" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/calibrationFragment"
+        android:name="edu.raf.diplomski.gui.regular.CalibrationFragment"
+        android:label="@string/calibration_tittle"
+        tools:layout="@layout/fragment_calibration">
+
+        <action
+            android:id="@+id/action_calibration_to_player"
+            app:destination="@id/playerFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/playerFragment"
+        android:name="edu.raf.diplomski.gui.regular.PlayerFragment"
+        android:label="Player"
+        tools:layout="@layout/fragment_player">
+
+    </fragment>
+
+
+</navigation>

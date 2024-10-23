@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MindTunes</string>
+    <string name="welcome_paragraph">Capture the power of your brainwaves to shape your perfect playlist. With real-time EEG data, we tune your mood to scientifically chosen tracks.</string>
+    <string name="begin_button">Begin</string>
+    <string name="welcome_tittle">Welcome to MindTunes</string>
+    <string name="select_your_music">Select your music</string>
+    <string name="select_your_music_paragraph">We\'ll use this to recommend music that\'s tailored to you</string>
+    <string name="available_streams">Available streams</string>
+    <string name="calibration_instruction">Sit still in a quiet space, keep your eyes open, and stay relaxed while we establish a baseline reading.</string>
+    <string name="calibration_tittle">Calibration</string>
+    <string name="lsl_streams_subtittle">We will use this stream to capture EEG data from</string>
+    <string name="resolve_streams_button">Resolve Streams</string>
+    <string name="lsl_streams_continue_button">Continue</string>
+</resources>
