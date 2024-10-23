@@ -1,4 +1,8 @@
 
+<p align="center">
+  <img src="repository_resources/mindtunes_logo_white.png" alt="MindTunes Logo" title="MindTunes Logo">
+</p>
+
 # MindTunes
 
 ## Overview
