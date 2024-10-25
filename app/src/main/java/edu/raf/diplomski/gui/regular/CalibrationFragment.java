@@ -26,7 +26,7 @@ import edu.raf.diplomski.gui.AppViewModel;
 
 public class CalibrationFragment extends Fragment {
     // TODO Change this to the actual calibration time when done with the development
-    public static final int CALIBRATION_TIME = 5;
+    public static final int CALIBRATION_TIME = 30;
 
     private AppViewModel viewModel;
     private LottieAnimationView lottieAnimationView;

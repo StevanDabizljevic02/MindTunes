@@ -30,7 +30,11 @@ public class EmotionalStateCalculator {
 
         double valence = calculateValence(channelBandsMap, leftElectrodes, rightElectrodes);
         double arousal = calculateArousal(channelBandsMap, leftElectrodes, rightElectrodes);
-        return new EmotionalState(valence, arousal);
+
+        double normalizedValence = ((valence + 1) / 2) * (Constants.VALENCE_UPPER - Constants.VALENCE_LOWER) + Constants.VALENCE_LOWER;
+        double normalizedArousal = arousal * (Constants.AROUSAL_UPPER - Constants.AROUSAL_LOWER) + Constants.AROUSAL_LOWER;
+
+        return new EmotionalState(normalizedValence, normalizedArousal);
     }
 
     /**

@@ -59,4 +59,12 @@ public class Constants {
     public static final List<String> REQUIRED_ELECTRODES_SMARTPHONES = List.of("R1", "R2", "R3", "R4", "C3", "Cz", "C4", "L1", "L2", "L3", "L4");
     public static final List<String> SMARTPHONES_LEFT_HEMISPHERE = List.of("R1", "R2", "R3", "R4", "C3");
     public static final List<String> SMARTPHONES_RIGHT_HEMISPHERE = List.of("C4", "L1", "L2", "L3", "L4");
+
+    public static final double VALENCE_LOWER = 0.235;
+    public static final double VALENCE_MEAN = 4.335;
+    public static final double VALENCE_UPPER = 8.475;
+
+    public static final double AROUSAL_LOWER = 0.108113;
+    public static final double AROUSAL_MEAN = 3.689057;
+    public static final double AROUSAL_UPPER = 7.27;
 }
